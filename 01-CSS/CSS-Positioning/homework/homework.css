@@ -7,9 +7,11 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 
 /* Arrancaremos este ejercicio por vos: */
 #ejercicioUno {
-    display: flex;
+    /* display: flex;
     flex: content;
+    text-align: center; */
     text-align: center;
+    display: block;
 }
 
 
@@ -17,7 +19,7 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 
 /* Acá va tu código */
 #ejercicioDos {
-    /* color:rgba(85, 85, 85, 0.205); */
+    /* Sigue quedando su espacio, pero no se ve visibility: hidden; */
     display: none;
 }
 
@@ -27,8 +29,11 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 
 /* Acá va tu código */
 #ejercicioTres{
-    margin-left: 200px; 
-    margin-top: 100px;
+    /* margin-left: 200px; 
+    margin-top: 100px; */
+    position: relative; /* Crea una relacion con la caja padre, ya que parte de el*/
+    top: 100px;
+    left: 200px;
 }
 
 
@@ -37,9 +42,13 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 
 /* Acá va tu código */
 #ejercicioCuatro{
-    overflow: hidden;
+    /* Yo lo hice asi:
+    left: ; overflow: hidden;
+    position: fixed;
+    top: 0; */
     position: fixed;
     top: 0;
+
 }
 
 
@@ -48,15 +57,31 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 
 /* Acá va tu código */
 #ejercicioCinco{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-block: 2%;
-
+    padding-block: 2%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
 
 }
 
 
 
 /* Ejercicio 6. */
+#ejercicioSiete{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+#elementoUno{
+    align-self: flex-start;
+}
+#elementoTres{
+    align-self: flex-end;
+}
